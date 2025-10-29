@@ -7,6 +7,7 @@ import { Carousel } from "../../componentes/Carousel";
 
 const GALLERY = ["/i1.jpeg", "/i2.jpeg", "/i3.jpeg", "/i4.jpeg", "/i5.jpeg"];
 
+
 export default function Home() {
   return (
     <main className={styles.container}>
