@@ -30,9 +30,9 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
-        <meta name="theme-color" content="#2d8f00ff" />
+        <meta name="theme-color" content="#8f3900ff" />
         <link rel="manifest" href="/manifest.json" />
-        <title>Nigth Run Rockets</title>
+        <title>Flow Conferencia</title>
       </head>
       <body>
         {children}
