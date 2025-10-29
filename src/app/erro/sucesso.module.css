@@ -1,0 +1,22 @@
+.container {
+  background: linear-gradient(to right, #ab2f2f, #e06363); /* verde claro para escuro */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.icone {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+}

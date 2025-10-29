@@ -1,0 +1,58 @@
+/* /components/NavMenu.module.css */
+
+.navMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #f1fded;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  padding: 1rem;
+  border-radius: 30%;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.label {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.label1 {
+  font-size: 0.75rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  margin-bottom: 50px;
+  background: #e95702;
+  color: #f6faff;
+}
+
+.active .icon {
+  stroke: #f1f6fd;
+
+}

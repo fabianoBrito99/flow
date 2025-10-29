@@ -1,0 +1,4 @@
+:global(#form-checkout .mp-Brick-form-installments),
+:global(#form-checkout select[name="installments"]) {
+  display: none !important;
+}

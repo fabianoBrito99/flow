@@ -1,0 +1,157 @@
+
+
+/* Área inteira ocupa a tela */
+.container {
+  min-height: 100dvh;
+  padding: 1rem 1rem 0.5rem 1rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+/* Barra de controles */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  margin: 0 auto 0.75rem auto;
+  width: 100%;
+  max-width: var(--maxw);
+  flex-wrap: wrap;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.checkboxItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.toolbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.counter {
+  background: #ffffff;
+  color: #203a43;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  min-width: 110px;
+  text-align: center;
+}
+
+/* Wrapper da tabela ocupa quase a tela (full screen feel) */
+.tableWrapper {
+  flex: 1 1 auto;            /* cresce para ocupar o restante da tela */
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 0.5rem;
+  overflow: auto;             /* scroll vertical e horizontal */
+  box-sizing: border-box;
+}
+
+/* Tabela */
+.tabela {
+  width: 100%;
+  min-width: 980px;           /* garante scroll horizontal em telas pequenas */
+  border-collapse: collapse;
+  background: #ffffff;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.92rem;         /* levemente compacta na tela */
+}
+
+.tabela thead {
+  background-color: #0074d9;
+  color: white;
+}
+
+.tabela th,
+.tabela td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  vertical-align: top;
+  white-space: nowrap;        /* evita quebras excessivas em cabeçalho */
+}
+
+.tabela tbody td {
+  white-space: normal;        /* conteúdo pode quebrar */
+  word-break: break-word;
+}
+
+.tabela tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+.tabela tr:hover td {
+  background-color: #f5f5f5;
+}
+
+/* Cabeçalho fixo ao rolar */
+.tabela thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Alinhamentos específicos */
+.tdCenter { text-align: center; }
+.tdRight  { text-align: right; }
+
+/* Mensagem vazia */
+.emptyMsg {
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.95;
+  margin: 0.75rem 0 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .title { font-size: 1.5rem; }
+  .tabela { font-size: 0.9rem; min-width: 900px; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0.75rem; }
+  .title { font-size: 1.35rem; }
+  .tabela { font-size: 0.85rem; min-width: 860px; }
+}
+
+@media (max-width: 480px) {
+  .title { font-size: 1.2rem; }
+  .checkboxItem { font-weight: 500; padding: 0.35rem 0.5rem; }
+  .tabela { font-size: 0.8rem; min-width: 820px; }
+}
